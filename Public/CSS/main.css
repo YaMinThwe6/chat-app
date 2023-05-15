@@ -1,0 +1,82 @@
+html,body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    background-color: antiquewhite;
+    font-family: sans-serif, Helvetica, "Roboto Light";
+}
+
+.SideBar{
+    width:17%;
+    height:100%;
+    float: left;
+    background-color: dimgray;
+    padding:0 1.5% 1.5% 1.5%;
+}
+
+.MainDisplay{
+    height:100%;
+    background-color: aliceblue;
+    float:right;
+    width: 77%;
+    padding:1.5%;
+}
+
+#messages{
+    height: 80%;
+}
+
+.message{
+    border:1px black solid;
+    border-radius: 5px;
+    padding:10px 10px 0 10px;
+    margin-bottom: 5px;
+}
+
+.time{
+    float:right;
+}
+
+.bottom-stick {
+    width:100%;
+    margin-bottom: 0;
+}
+
+.center{
+    text-align: center;
+}
+
+#input__text{
+    width:80%;
+    height:30px;
+    text-align: center;
+}
+
+#send__button{
+    width:20%;
+    float:left;
+    margin-right:10px;
+    margin-left:30%;
+}
+
+#join_div{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+}
+
+.join_centre{
+    text-align: center;
+    margin: auto;
+}
+ .join_centre input{
+     width: 300px;
+     height: 40px;
+     text-align: center;
+ }
+
+ .join_centre button{
+     width: 200px;
+ }
