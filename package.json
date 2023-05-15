@@ -1,0 +1,18 @@
+{
+  "name": "chat-app-real-time",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon Source/index.js",
+    "start": "node Source/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bad-words": "^3.0.4",
+    "express": "^4.18.2",
+    "socket.io": "^4.6.1"
+  }
+}
