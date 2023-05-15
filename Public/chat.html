@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Chat App</title>
+    <link rel="stylesheet" type="text/css" href="CSS/main.css">
+</head>
+<body>
+
+<div class="SideBar">
+    <h1>Chat App</h1>
+    <div id="room_info"></div>
+</div>
+
+<div class="MainDisplay">
+    <div id="messages"></div>
+    <div class="bottom-stick">
+        <hr>
+        <form id="message">
+            <label class="center">
+                <p><input id="input__text" name="messages" placeholder="Message" required autocomplete="off"></p>
+            </label>
+            <p><button id="send__button">Send</button></p>
+        </form>
+        <button id="location">Share my location!</button>
+    </div>
+</div>
+
+
+<script id="message-template" type="text/html">
+    <div class="message">
+        <span><small><b>{{username}}</b></small></span>
+        <span class="time"><small>{{time}}</small></span>
+        <p>{{message}}</p>
+    </div>
+</script>
+
+<script id="location-template" type="text/html">
+    <div class="message">
+        <span><small><b>{{username}}</b></small></span>
+        <span class="time"><small>{{time}}</small></span>
+        <p><a href={{url}} target="_blank">My Current Location!</a></p>
+    </div>
+</script>
+
+<script id="users_list" type="text/html">
+    <div class="usersList">
+        <h3>{{room}}</h3>
+        <h4>Users</h4>
+        <ul>
+            {{#users}}
+            <li>{{username}}</li>
+            {{/users}}
+        </ul>
+    </div>
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.6.0/qs.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/JS/Chat.js"></script>
+</body>
+</html>
